@@ -1,0 +1,20 @@
+{"id": "T005", "text": "My university email login does not work", "intent": "access", "variety": "en", "course": null, "amount": null, "faq": ["F03", "F01"]}
+{"id": "T012", "text": "Where do I submit the assignment for NLP101?", "intent": "assessment", "variety": "en", "course": "NLP101", "amount": null, "faq": ["F07"]}
+{"id": "T019", "text": "What is the deadline to register courses?", "intent": "registration", "variety": "en", "course": null, "amount": null, "faq": ["F09"]}
+{"id": "T026", "text": "Why was I charged 150.50 EGP twice?", "intent": "fees", "variety": "en", "course": null, "amount": "150.50", "faq": ["F11", "F12"]}
+{"id": "T033", "text": "I need an enrolment certificate", "intent": "other", "variety": "en", "course": null, "amount": null, "faq": ["F18"]}
+{"id": "T040", "text": "لا يعمل البريد الجامعي معي", "intent": "access", "variety": "msa", "course": null, "amount": null, "faq": ["F03"]}
+{"id": "T046", "text": "أين أسلم واجب NLP101؟", "intent": "assessment", "variety": "msa", "course": "NLP101", "amount": null, "faq": ["F07"]}
+{"id": "T052", "text": "ما آخر موعد لتسجيل المقررات؟", "intent": "registration", "variety": "msa", "course": null, "amount": null, "faq": ["F09"]}
+{"id": "T058", "text": "متى يصل المبلغ المسترد؟", "intent": "fees", "variety": "msa", "course": null, "amount": null, "faq": ["F12"]}
+{"id": "T064", "text": "أحتاج شهادة قيد", "intent": "other", "variety": "msa", "course": null, "amount": null, "faq": ["F18"]}
+{"id": "T070", "text": "الواي فاي بتاع الجامعة مش شغال معايا", "intent": "access", "variety": "egy", "course": null, "amount": null, "faq": ["F03"]}
+{"id": "T075", "text": "أسلم الأسايمنت بتاع NLP101 فين؟", "intent": "assessment", "variety": "egy", "course": "NLP101", "amount": null, "faq": ["F07"]}
+{"id": "T080", "text": "آخر ميعاد للتسجيل امتى؟", "intent": "registration", "variety": "egy", "course": null, "amount": null, "faq": ["F09"]}
+{"id": "T085", "text": "الفلوس المستردة هتوصل امتى؟", "intent": "fees", "variety": "egy", "course": null, "amount": null, "faq": ["F12"]}
+{"id": "T090", "text": "محتاج شهادة قيد", "intent": "other", "variety": "egy", "course": null, "amount": null, "faq": ["F18"]}
+{"id": "T095", "text": "3ayez a5osh el email bta3 el gam3a", "intent": "access", "variety": "arabizi", "course": null, "amount": null, "faq": ["F03"]}
+{"id": "T100", "text": "emte7an AI301 fi anhy 2a3a?", "intent": "assessment", "variety": "arabizi", "course": "AI301", "amount": null, "faq": ["F04"]}
+{"id": "T105", "text": "el system msh mekhaleeni asagel CS214", "intent": "registration", "variety": "arabizi", "course": "CS214", "amount": null, "faq": ["F10"]}
+{"id": "T110", "text": "el flos hatewsal emta?", "intent": "fees", "variety": "arabizi", "course": null, "amount": null, "faq": ["F12"]}
+{"id": "T115", "text": "3ayez tasree7 rakna", "intent": "other", "variety": "arabizi", "course": null, "amount": null, "faq": ["F16"]}

@@ -1,0 +1,5 @@
+# Which version of each part runs. Change one line, re-run `python -m sanad report`,
+# and record the comparison in REPLACEMENTS.md before you keep the change.
+[parts]
+normalize = "v0_identity"
+tokenize  = "v0_whitespace"

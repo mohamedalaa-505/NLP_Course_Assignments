@@ -1,0 +1,20 @@
+{"id": "T004", "text": "I registered CS214 but cannot see its page", "intent": "access", "variety": "en", "course": "CS214", "amount": null, "faq": ["F02"]}
+{"id": "T011", "text": "How can I appeal my grade in CS214?", "intent": "assessment", "variety": "en", "course": "CS214", "amount": null, "faq": ["F06"]}
+{"id": "T018", "text": "The system blocks CS214 because of a prerequisite", "intent": "registration", "variety": "en", "course": "CS214", "amount": null, "faq": ["F10"]}
+{"id": "T025", "text": "I want to pay the fees in instalments", "intent": "fees", "variety": "en", "course": null, "amount": null, "faq": ["F13"]}
+{"id": "T032", "text": "I lost my student ID card", "intent": "other", "variety": "en", "course": null, "amount": null, "faq": ["F17"]}
+{"id": "T039", "text": "سجلت مقرر CS214 ولا أرى صفحته", "intent": "access", "variety": "msa", "course": "CS214", "amount": null, "faq": ["F02"]}
+{"id": "T045", "text": "أريد التظلم من درجتي في CS214", "intent": "assessment", "variety": "msa", "course": "CS214", "amount": null, "faq": ["F06"]}
+{"id": "T051", "text": "يمنعني النظام من CS214 بسبب متطلب سابق", "intent": "registration", "variety": "msa", "course": "CS214", "amount": null, "faq": ["F10"]}
+{"id": "T057", "text": "أريد تقسيط المصروفات", "intent": "fees", "variety": "msa", "course": null, "amount": null, "faq": ["F13"]}
+{"id": "T063", "text": "فقدت بطاقتي الجامعية", "intent": "other", "variety": "msa", "course": null, "amount": null, "faq": ["F17"]}
+{"id": "T069", "text": "سجلت CS214 ومش لاقي الصفحة بتاعتها", "intent": "access", "variety": "egy", "course": "CS214", "amount": null, "faq": ["F02"]}
+{"id": "T074", "text": "عايز أتظلم من درجتي في CS214", "intent": "assessment", "variety": "egy", "course": "CS214", "amount": null, "faq": ["F06"]}
+{"id": "T079", "text": "السيستم مش مخليني أسجل CS214 عشان متطلب سابق", "intent": "registration", "variety": "egy", "course": "CS214", "amount": null, "faq": ["F10"]}
+{"id": "T084", "text": "عايز أقسط المصاريف", "intent": "fees", "variety": "egy", "course": null, "amount": null, "faq": ["F13"]}
+{"id": "T089", "text": "الكارنيه ضاع مني", "intent": "other", "variety": "egy", "course": null, "amount": null, "faq": ["F17"]}
+{"id": "T094", "text": "el wifi msh shaghal m3aya", "intent": "access", "variety": "arabizi", "course": null, "amount": null, "faq": ["F03"]}
+{"id": "T099", "text": "asallem el assignment bta3 NLP101 fein?", "intent": "assessment", "variety": "arabizi", "course": "NLP101", "amount": null, "faq": ["F07"]}
+{"id": "T104", "text": "3ayez asagel NLP101 bokra", "intent": "registration", "variety": "arabizi", "course": "NLP101", "amount": null, "faq": ["F08", "F09"]}
+{"id": "T109", "text": "hastarad flos el mada elly sheltaha?", "intent": "fees", "variety": "arabizi", "course": null, "amount": null, "faq": ["F12"]}
+{"id": "T114", "text": "me7tag shahadet 2ed", "intent": "other", "variety": "arabizi", "course": null, "amount": null, "faq": ["F18"]}
