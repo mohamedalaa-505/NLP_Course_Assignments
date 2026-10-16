@@ -15,8 +15,9 @@ class Router:
 
     def fit(self, tickets):
         """Remember the majority intent of the training tickets."""
-        raise NotImplementedError("Level 1: fit")
+        intents = [t["intent"] for t in tickets]
+        self.label = majority_baseline(intents)
 
     def predict(self, text):
         """Return the remembered label, whatever the text says."""
-        raise NotImplementedError("Level 1: predict")
+        return self.label

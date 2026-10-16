@@ -13,12 +13,20 @@ class Search:
 
     def fit(self):
         """Prepare each passage once: id -> set of its tokens."""
-        raise NotImplementedError("Level 1: fit")
+        for p in self.passages:
+            self.tokens[p["id"]] = set(self.prep(passage_text(p)))
 
     def score(self, query_tokens, pid):
         """Number of distinct query tokens that occur in passage pid."""
-        raise NotImplementedError("Level 1: score")
+        return len(set(query_tokens) & self.tokens[pid])
 
     def search(self, query, k=3):
         """Ids of the k best passages with a positive score; ties by id."""
-        raise NotImplementedError("Level 1: search")
+        query_tokens = self.prep(query)
+        scored = []
+        for pid in self.tokens:
+            s = self.score(query_tokens, pid)
+            if s > 0:
+                scored.append((s, pid))
+        scored.sort(key=lambda item: (-item[0], item[1]))
+        return [pid for s, pid in scored[:k]]

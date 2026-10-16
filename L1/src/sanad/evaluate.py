@@ -18,7 +18,10 @@ STUDENT = ("accuracy", "confusion", "per_class", "majority_baseline")
 
 def accuracy(gold, pred):
     """Fraction of items whose prediction equals the reference label."""
-    raise NotImplementedError("Level 1: accuracy")
+    if len(gold) == 0:
+        raise ZeroDivisionError()
+
+    return (sum(g == p for g, p in zip(gold, pred))) / len(gold)
 
 
 def confusion(labels, gold, pred):
@@ -27,12 +30,42 @@ def confusion(labels, gold, pred):
     Rows are reference labels, as in the book. A None prediction is counted in
     an extra column named None.
     """
-    raise NotImplementedError("Level 1: confusion")
+    columns = list(labels) + [None]
+
+    matrix = {}
+    for g in labels:
+        matrix[g] = {}
+        for c in columns:
+            matrix[g][c] = 0
+
+    for g, p in zip(gold, pred):
+        matrix[g][p] += 1
+
+    return matrix
+
+
 
 
 def per_class(labels, gold, pred):
     """{label: (precision, recall)}; a 0/0 ratio is None, never 0 or 1."""
-    raise NotImplementedError("Level 1: per_class")
+    def ratio(numerator, denominator):
+        if denominator == 0:
+            return None
+        return numerator / denominator
+
+    result = {}
+    for label in labels:
+        tp, fp, fn = 0, 0, 0
+        for g, p in zip(gold, pred):
+            if p == label and g == label:
+                tp += 1
+            elif p == label and g != label:
+                fp += 1
+            elif p != label and g == label:
+                fn += 1
+        result[label] = (ratio(tp, tp + fp), ratio(tp, tp + fn))
+
+    return result
 
 
 def f_beta(p, r, beta=1.0):
@@ -65,7 +98,9 @@ def micro(labels, gold, pred):
 
 def majority_baseline(train_labels):
     """The label a no-model baseline predicts: most frequent, ties broken alphabetically."""
-    raise NotImplementedError("Level 1: majority_baseline")
+    counts = Counter(train_labels)
+    most = max(counts.values())
+    return min(label for label, c in counts.items() if c == most)
 
 
 def margin95(p, n):
